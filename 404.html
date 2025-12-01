@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Redirigiendo a la Aplicación...</title>
+    
+    <script>
+      // 1. Define la base de tu repositorio, debe coincidir con el 'basename' en App.js
+      var basename = "/matematicas-app"; 
+      
+      // 2. Obtiene la ruta actual que falló (ej: /matematicas-app/aproximacion)
+      var path = window.location.pathname;
+      
+      // 3. Guarda la ruta completa en sessionStorage
+      sessionStorage.setItem('redirect_path', path);
+      
+      // 4. Redirige a la URL principal (index.html), pasando la ruta real como parámetro (aunque el script en index.html la lee directamente)
+      var redirect = basename + "/?path=" + path.substring(basename.length);
+      
+      // Redirección forzada
+      window.location.replace(redirect);
+    </script>
+  </head>
+  <body>
+    <h1>404: Ruta no encontrada. Redirigiendo a la aplicación...</h1>
+  </body>
+</html>
