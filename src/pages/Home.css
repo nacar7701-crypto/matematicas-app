@@ -1,0 +1,53 @@
+.home-page-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Arial', sans-serif;
+}
+
+.home-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.module-card {
+  display: block;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-decoration: none; /* Quitar subrayado del Link */
+  color: inherit;
+  transition: all 0.3s;
+  background-color: #f9f9f9;
+}
+
+.module-card:hover {
+  background-color: #e6e6e6;
+  border-color: #1c4a1c;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.module-card.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background-color: #eee;
+}
+
+.card-icon {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.home-footer {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 0.8em;
+  color: #666;
+}

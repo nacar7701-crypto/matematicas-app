@@ -1,0 +1,346 @@
+/* ================================
+   ESTILO GENERAL — TEMA PIZARRA
+=================================== */
+
+.chalk-page {
+  background: #0a0f1c;        /* fondo oscuro estilo pizarra */
+  min-height: 100vh;
+  padding: 20px;
+  color: #e8f0ff;
+  font-family: "Poppins", sans-serif;
+}
+
+.chalk-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffda6b;
+}
+
+.chalk-sub {
+  margin-top: -10px;
+  color: #b4c6ff;
+}
+
+.chalk-source {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+/* ================================
+   TARJETAS
+=================================== */
+
+.chalk-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 10px rgba(25, 25, 45, 0.3);
+}
+
+/* ================================
+   TÍTULOS Y TEXTO
+=================================== */
+
+.section-title {
+  color: #ffd35e;
+  font-size: 1.6rem;
+}
+
+.small-title {
+  color: #9ecbff;
+  margin-top: 18px;
+  font-weight: 600;
+}
+
+.section-text {
+  color: #dfe9ff;
+  line-height: 1.6;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* listas del texto */
+.section-list {
+  margin-left: 25px;
+  margin-top: 8px;
+}
+
+.section-list li {
+  color: #f1f7ff;
+  margin-bottom: 6px;
+}
+
+/* ================================
+   EJERCICIOS
+=================================== */
+
+.exercise-controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.exercise-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.exercise-item {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.exercise-item.ok {
+  border-color: #58ff8a;
+}
+
+.exercise-item.bad {
+  border-color: #ff596a;
+}
+
+.ex-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* número estilo tiza */
+.chalk-num {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  font-size: 1.4rem;
+  color: #fff;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.precision-badge {
+  background: #3b4b82;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+.ex-right {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.chalk-input {
+  background: #111a2b;
+  border: 1px solid #334366;
+  padding: 8px;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.feedback.ok {
+  color: #89ffa0;
+}
+
+.feedback.bad {
+  color: #ff7b7b;
+}
+
+/* ================================
+   BOTONES
+=================================== */
+
+.btn {
+  background: #3c59ff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #5674ff;
+}
+
+.btn.ghost {
+  background: transparent;
+  border: 1px solid #3c59ff;
+}
+
+.btn.small {
+  padding: 5px 12px;
+  font-size: 0.85rem;
+}
+
+/* ================================
+   MATCH GAME
+=================================== */
+
+.match-game {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.match-col {
+  flex: 1;
+}
+
+.match-btn {
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+  margin-bottom: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #5060a3;
+  color: #e5ecff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.match-btn.selected {
+  background: #3c59ff;
+  border-color: #8fa9ff;
+}
+
+/* ================================
+   QUIZ
+=================================== */
+
+.quiz-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.quiz-row {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.quiz-result {
+  margin-top: 15px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+}
+
+.final-comment {
+  color: #9fd0ff;
+  margin-top: 6px;
+}
+
+/* ================================
+   FOOTER
+=================================== */
+
+.chalk-footer {
+  text-align: center;
+  margin-top: 40px;
+  opacity: 0.7;
+  color: #b9c6e1;
+}
+
+.interactive-table {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 15px 0;
+  border: 3px solid #ffffffaa;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.header-cell {
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 2px solid #fff;
+  background: #ffffff22;
+}
+
+.highlight-h {
+  background: #ffeb3b55 !important;
+}
+
+.cell {
+  padding: 14px;
+  border-right: 2px solid #ffffff66;
+  border-bottom: 2px solid #ffffff33;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.cell:last-child {
+  border-right: none;
+}
+
+.cell:hover {
+  background: #ffffff22;
+}
+
+.highlight {
+  background: #ffeb3b44 !important;
+}
+
+.cell-value {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.cell-pop {
+  position: absolute;
+  bottom: -42px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #000000dd;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  border-radius: 8px;
+  color: white;
+  border: 1px solid white;
+  white-space: nowrap;
+  animation: fadeIn 0.2s ease-in-out;
+  z-index: 5;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateX(-50%) translateY(5px); }
+  to { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+.result-box {
+  background: #4caf50aa;
+  padding: 10px 15px;
+  border-radius: 8px;
+  display: inline-block;
+  font-size: 1.3rem;
+  margin-top: 10px;
+  border: 2px solid white;
+}
+.wrong-list {
+  margin-top: 12px;
+  padding: 10px;
+  background: #ff000022;
+  border-left: 4px solid #ff5c5c;
+  border-radius: 8px;
+}
+
+.wrong-item {
+  margin-bottom: 10px;
+  padding: 8px;
+  background: #ffffff11;
+  border: 1px solid #ffffff33;
+  border-radius: 6px;
+  line-height: 1.4;
+}
