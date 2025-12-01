@@ -19,5 +19,16 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    
+    <script>
+      // Verifica si existe la ruta guardada por el archivo 404.html
+      var redirectPath = sessionStorage.getItem('redirect_path');
+      if (redirectPath) {
+        // Usa history.replaceState para actualizar la URL sin recargar, 
+        // engañando a React Router para que cargue el componente correcto.
+        history.replaceState(null, null, redirectPath);
+        sessionStorage.removeItem('redirect_path');
+      }
+    </script>
     </body>
 </html>
