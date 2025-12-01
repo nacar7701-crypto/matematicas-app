@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/matematicas-app/static/css/main.6b1b0d63.css",
-    "main.js": "/matematicas-app/static/js/main.559bd4a9.js",
+    "main.js": "/matematicas-app/static/js/main.656af3c4.js",
     "static/js/453.7d64440b.chunk.js": "/matematicas-app/static/js/453.7d64440b.chunk.js",
     "index.html": "/matematicas-app/index.html",
     "main.6b1b0d63.css.map": "/matematicas-app/static/css/main.6b1b0d63.css.map",
-    "main.559bd4a9.js.map": "/matematicas-app/static/js/main.559bd4a9.js.map",
+    "main.656af3c4.js.map": "/matematicas-app/static/js/main.656af3c4.js.map",
     "453.7d64440b.chunk.js.map": "/matematicas-app/static/js/453.7d64440b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6b1b0d63.css",
-    "static/js/main.559bd4a9.js"
+    "static/js/main.656af3c4.js"
   ]
 }
